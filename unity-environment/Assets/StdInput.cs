@@ -2,13 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public class StdInput : MonoBehaviour {
 
-
-public class HandleBarController : MonoBehaviour {
-
-    // Use this for initialization
-    
-    void Start () {
+	// Use this for initialization
+	void Start () {
 		
 	}
 	
