@@ -10,7 +10,7 @@
 # Tensorflow Model Info
 /python/models
 /python/summaries
-/python/3DBall_Data/Managed/*
+/python/3DBall_Data/*
 # Environemnt logfile
 *unity-environment.log
 
