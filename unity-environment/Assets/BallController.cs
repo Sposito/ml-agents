@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StdInput : MonoBehaviour {
+public class BallController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,4 +13,6 @@ public class StdInput : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	
 }
