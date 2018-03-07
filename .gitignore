@@ -1,6 +1,6 @@
 /unity-environment/[Aa]ssets/InControl/
-/unity-environment/[Aa]ssets/[Mm]lA-gents/Exemples
-/unity-environment/[Aa]ssets/[Mm]lA-gents/Materials
+/unity-environment/[Aa]ssets/[Mm][Ll]-[Aa]gents/[Ee]xamples/
+/unity-environment/[Aa]ssets/[Mm][Ll]-[Aa]gents/[Mm]aterials/
 /unity-environment/[Ll]ibrary/
 /unity-environment/[Tt]emp/
 /unity-environment/[Oo]bj/
@@ -76,4 +76,7 @@
 
 #
 
+
+unity-environment/Assets/ML-Agents/Examples
+unity-environment/Assets/ML-Agents/Materials
 
