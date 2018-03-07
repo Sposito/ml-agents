@@ -80,5 +80,5 @@
 unity-environment/Assets/ML-Agents/Examples
 unity-environment/Assets/ML-Agents/Materials
 
-unity-environment/Assets/InControl.meta
-unity-environment/ProjectSettings/ProjectVersion.txt
+/unity-environment/Assets/InControl.meta/
+/unity-environment/ProjectSettings/ProjectVersion.txt
