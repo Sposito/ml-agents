@@ -28,8 +28,8 @@ public class StdInput : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		ManualController();	
-		
+		if (manual)
+			ManualController();	
 	}
 
 	void ManualController(){
