@@ -32,6 +32,11 @@ public class BarController : MonoBehaviour {
 		this.clockWiseInput = clockwise;
 	}
 
+	public void SetInputs(float rotation,float translation){
+		this.translationInput = Mathf.Clamp(translation, -1f, 1f);
+		this.rotationInput = Mathf.Clamp(translation, -1f, 1f);
+	}
+
 	void FixedUpdate () {
 		//rb.AddTorque(Vector3.forward*force,mode);
 		var inputDevice = InputManager.ActiveDevice;
