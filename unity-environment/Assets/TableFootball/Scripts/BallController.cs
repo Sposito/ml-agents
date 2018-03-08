@@ -8,6 +8,7 @@ public class BallController : MonoBehaviour {
 	float idleTime = 0f;
 	public float maxIdleTime = 8f;
 	Vector3 startPos;
+	public GameManager manager;
 	void Start () {
 		rb = GetComponent<Rigidbody>();
 		startPos = transform.position;
@@ -31,6 +32,16 @@ public class BallController : MonoBehaviour {
 			PutBallInGame();
 		}
 
+	}
+
+	void OnTriggerEnter(Collider col){
+		if (col.tag == "P1Goal"){
+			manager.p1Score++;
+		}
+
+		if (col.tag == "P2Goal"){
+			manager.p2Score++;
+		}
 	}
 
 	void PutBallInGame(){
