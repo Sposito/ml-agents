@@ -20,7 +20,7 @@ public class TableFootBallAgent : Agent {
 		
 
 //  	p1 info
-		foreach (Rigidbody rb in p1.GetComponents<Rigidbody>()){
+		foreach (Rigidbody rb in p1.GetComponentsInChildren<Rigidbody>()){
 			print(rb.gameObject.name);
 			state.Add(rb.velocity.z);
 			state.Add(rb.angularVelocity.z);
@@ -29,7 +29,7 @@ public class TableFootBallAgent : Agent {
 		}
 
 //  	p2 info
-		foreach (Rigidbody rb in p1.GetComponents<Rigidbody>()){
+		foreach (Rigidbody rb in p1.GetComponentsInChildren<Rigidbody>()){
 			print(rb.gameObject.name);
 			state.Add(rb.velocity.z);
 			state.Add(rb.angularVelocity.z);

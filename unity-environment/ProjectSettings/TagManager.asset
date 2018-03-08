@@ -8,6 +8,7 @@ TagManager:
   - iWall
   - P1Goal
   - P2Goal
+  - pit
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - ball
   - props
   - noCol
-  - 
+  - ball
   - 
   - 
   - 
