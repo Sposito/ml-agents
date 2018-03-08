@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using InControl;
-using XInputDotNetPure;
 
 public class StdInput : MonoBehaviour {
 
@@ -41,9 +40,6 @@ public class StdInput : MonoBehaviour {
 			var temp = unusedHand;
 			unusedHand = hand2index;
 			hand2index = temp;
-			GamePad.SetVibration((XInputDotNetPure.PlayerIndex)0, 1f, 1f);
-			
-			
 		}
 
 		if (inputDevice.DPadLeft){
@@ -88,7 +84,6 @@ public class StdInput : MonoBehaviour {
 			while(intensityL > 0f && intensityR > 0){
 				intensityL -= 0.03f;
 				intensityR -= 0.03f;
-				GamePad.SetVibration((PlayerIndex)0, intensityL, intensityR);
 				yield return new WaitForEndOfFrame();
 			}	
 	}
