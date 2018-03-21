@@ -6,6 +6,9 @@ TagManager:
   tags:
   - agent
   - iWall
+  - P1Goal
+  - P2Goal
+  - pit
   layers:
   - Default
   - TransparentFX
@@ -18,8 +21,13 @@ TagManager:
   - invisible
   - ball
   - props
+<<<<<<< HEAD
   - 
   - 
+=======
+  - noCol
+  - ball
+>>>>>>> 476b7b0e74800fa3ed9cb956b02b718ce5f4e652
   - 
   - 
   - 
