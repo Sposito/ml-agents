@@ -82,3 +82,5 @@ unity-environment/Assets/ML-Agents/Materials
 
 unity-environment/Assets/InControl.meta
 python/tableFoot_Data/*
+python/.vscode/settings.json
+python/WinPixEventRuntime.dll
