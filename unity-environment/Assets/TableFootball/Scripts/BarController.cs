@@ -49,7 +49,7 @@ public class BarController : MonoBehaviour {
 
 	void OnCollisionEnter(Collision col){
 		//playerConytroller.Rumble(gameObject.GetInstanceID(),1f);
-		print(gameObject.name);
+		//print(gameObject.name);
 		//playerController.Test();
 	}
 }

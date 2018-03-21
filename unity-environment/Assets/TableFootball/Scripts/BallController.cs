@@ -6,7 +6,7 @@ public class BallController : MonoBehaviour {
 
     Rigidbody rb;
 	float idleTime = 0f;
-	public float maxIdleTime = 8f;
+	float maxIdleTime = 10f;
 	Vector3 startPos;
 	public GameManager manager;
 	void Start () {

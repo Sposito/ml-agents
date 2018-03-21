@@ -15,7 +15,9 @@ public class StdInput : MonoBehaviour {
 	int unusedHand = 1;
 	int hand2index = 2;
 
-	public bool manual = false;
+	public float[] inputArray = new float[]{0f, 0f, 0f,0f,0f,0f};
+
+	static bool manual = false;
 
 	void Start () {
 		for(int i = 0; i < 3; i++){
@@ -28,7 +30,19 @@ public class StdInput : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		if (manual)
-			ManualController();	
+			ManualController();
+		else if(inputArray.Length == 6){
+			controllers[0].SetInputs(inputArray[0], inputArray[1]);
+			controllers[1].SetInputs(inputArray[2], inputArray[3]);
+			controllers[2].SetInputs(inputArray[4], inputArray[5]);
+		}
+			//ExternalController();	
+	}
+
+	void ExternalController(){
+		controllers[0].SetInputs(inputArray[0], inputArray[1]);
+		controllers[1].SetInputs(inputArray[2], inputArray[3]);
+		controllers[2].SetInputs(inputArray[4], inputArray[5]);
 	}
 
 	void ManualController(){

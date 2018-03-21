@@ -8,9 +8,12 @@ public class GameManager : MonoBehaviour {
 	private int _p2Score = 0;
 	public float gameTime = 0f;
 
+
+	
 	public Text p1ScoreText;
 	public Text p2ScoreText;
 	public Text timerText;
+	public bool training = true;
 
 	public int p1Score{
 		get{
@@ -18,7 +21,8 @@ public class GameManager : MonoBehaviour {
 		}
 		set{
 			_p1Score = value;
-			p1ScoreText.text = _p1Score.ToString();
+			if(!training)
+				p1ScoreText.text = _p1Score.ToString();
 		}
 	}
 
@@ -28,12 +32,14 @@ public class GameManager : MonoBehaviour {
 		}
 		set{
 			_p2Score = value;
-			p2ScoreText.text = _p2Score.ToString();
+			if(!training)
+				p2ScoreText.text = _p2Score.ToString();
 		}
 	}
 	
 	void Start () {
-		StartCoroutine( TimeUpdater() );
+		if(!training)
+			StartCoroutine( TimeUpdater() );
 	}
 	
 	// Update is called once per frame
